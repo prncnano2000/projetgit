@@ -1,0 +1,167 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur commun pour aligner les éléments */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav {
+    display: inline-block;
+    
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section principale */
+.main-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main-section h2 {
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.main-section button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.main-section button a:hover {
+    background-color: #555;
+}
+
+/* Services */
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: #eaeaea;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+form input,
+form textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 60%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .service-cards {
+        display: block; /* Les cartes passent en bloc, une sous l'autre */
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Formulaire de contact */
+    form input,
+    form textarea {
+        width: 80%;
+    }
+
+    form button {
+        width: 80%; 
+    }
+}

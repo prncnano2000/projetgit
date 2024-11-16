@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- En-tête avec le nom du site -->
+    <header>
+        <div class="container">
+            <h1>Mon Site Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <section id="accueil" class="main-section">
+        <div class="container">
+            <h2>Bienvenue sur mon site</h2>
+            <p>Découvrez nos services et nos projets récents. Nous sommes là pour vous aider à réaliser vos objectifs !</p>
+            <button><a href="#services">Explorer nos services</a></button>
+        </div>
+    </section>
+
+    <!-- Section des services -->
+    <section id="services" class="main-section">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Design Web</h3>
+                    <p>Nous créons des sites web modernes et responsives.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Développement</h3>
+                    <p>Développement d'applications web et mobiles sur mesure.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Marketing Digital</h3>
+                    <p>Optimisation pour les moteurs de recherche (SEO) et publicité en ligne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="main-section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Vous avez un projet en tête ? Contactez-nous et discutons-en !</p>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
