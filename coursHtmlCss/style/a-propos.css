@@ -30,8 +30,7 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
+td, th {
   padding: 15px;
   border: 1px solid #a5b4fc;
 }
@@ -44,8 +43,7 @@ h2 {
   margin-bottom: 80px;
 }
 
-h1,
-h2 {
+h1, h2 {
   text-align: center;
 }
 
