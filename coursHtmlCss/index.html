@@ -39,6 +39,18 @@
         </section>
         <section class="accueil-photos">
             <h2>Mon dernier projet</h2>
+
+            <div class="container" id="formateurs">
+                <h2><a href="portfolio.html">Gestion des déchets</a> </h2>
+                <p>Veuillez sélectionner une formation :</p>
+                <select id="formations" name="formations">
+                    <option value="">Sélectionnez une formation</option>
+                    <option value="portfolio.html"> Gestion des déchets</option>
+                    <option value="energies-renouvelables">Énergies renouvelables</option>
+                    <option value="portfolio.html">Agriculture durable</option>
+                </select>
+            </div>
+
             <div>
                 <img src="images/accueil/element-1.png" alt="Twelve apostles - Australie" />
                 <img src="images/accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" />
@@ -82,6 +94,15 @@
             </a>
         </div>
     </footer>
+    
 </body>
+    <script>
+        function redirectToProgram() {
+            var selectedOption = document.getElementById("formations").value;
+            if (selectedOption) {
+                window.location.href = selectedOption;
+            }
+        }
+    </script>
 
 </html>
